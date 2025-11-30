@@ -18,7 +18,7 @@ ROOT_DIR = Path(__file__).resolve().parent
 ENV_PATH = ROOT_DIR / ".env"
 load_dotenv(dotenv_path=ENV_PATH)
 
-ENV_EXIST = os.getenv("ENV_FILE")
+ENV_EXIST = os.getenv("ENV_EXIST")
 
 if ENV_EXIST:
     print("环境变量加载成功")
